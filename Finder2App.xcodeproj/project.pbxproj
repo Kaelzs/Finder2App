@@ -7,20 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9F8AB7F72580C03900973886 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8AB7F62580C03900973886 /* AppDelegate.swift */; };
-		9F8AB7F92580C03900973886 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8AB7F82580C03900973886 /* ViewController.swift */; };
 		9F8AB7FB2580C03900973886 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F8AB7FA2580C03900973886 /* Assets.xcassets */; };
-		9F8AB7FE2580C03900973886 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F8AB7FC2580C03900973886 /* Main.storyboard */; };
+		9F8AB80B2580C07000973886 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8AB80A2580C07000973886 /* main.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9F8AB81D2580D53100973886 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9F8AB7F32580C03900973886 /* Finder2App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Finder2App.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9F8AB7F62580C03900973886 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9F8AB7F82580C03900973886 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9F8AB7FA2580C03900973886 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9F8AB7FD2580C03900973886 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F8AB7FF2580C03900973886 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F8AB8002580C03900973886 /* Finder2App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Finder2App.entitlements; sourceTree = "<group>"; };
+		9F8AB80A2580C07000973886 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,12 +62,10 @@
 		9F8AB7F52580C03900973886 /* Finder2App */ = {
 			isa = PBXGroup;
 			children = (
-				9F8AB7F62580C03900973886 /* AppDelegate.swift */,
-				9F8AB7F82580C03900973886 /* ViewController.swift */,
 				9F8AB7FA2580C03900973886 /* Assets.xcassets */,
-				9F8AB7FC2580C03900973886 /* Main.storyboard */,
-				9F8AB7FF2580C03900973886 /* Info.plist */,
 				9F8AB8002580C03900973886 /* Finder2App.entitlements */,
+				9F8AB7FF2580C03900973886 /* Info.plist */,
+				9F8AB80A2580C07000973886 /* main.swift */,
 			);
 			path = Finder2App;
 			sourceTree = "<group>";
@@ -73,6 +80,7 @@
 				9F8AB7EF2580C03900973886 /* Sources */,
 				9F8AB7F02580C03900973886 /* Frameworks */,
 				9F8AB7F12580C03900973886 /* Resources */,
+				9F8AB81D2580D53100973886 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -94,6 +102,7 @@
 				TargetAttributes = {
 					9F8AB7F22580C03900973886 = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 				};
 			};
@@ -121,7 +130,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F8AB7FB2580C03900973886 /* Assets.xcassets in Resources */,
-				9F8AB7FE2580C03900973886 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,23 +140,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F8AB7F92580C03900973886 /* ViewController.swift in Sources */,
-				9F8AB7F72580C03900973886 /* AppDelegate.swift in Sources */,
+				9F8AB80B2580C07000973886 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		9F8AB7FC2580C03900973886 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9F8AB7FD2580C03900973886 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		9F8AB8012580C03900973886 /* Debug */ = {
@@ -271,6 +267,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Finder2App/Finder2App.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -281,8 +278,9 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kaelzs.Finder2App;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaelzs.finder2app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -292,6 +290,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Finder2App/Finder2App.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -302,7 +301,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kaelzs.Finder2App;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaelzs.finder2app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
